@@ -1,0 +1,739 @@
+/* App.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Navigation */
+/* Navigation.css */
+
+/* Basic Styling */
+.navbar {
+  background-color: #2c3e50; /* Dark blue background */
+  padding: 15px 20px; /* Padding for better spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out the logo and nav items */
+}
+
+.navbar-brand {
+  color: #ecf0f1; /* Light text color */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .logo {
+  height: 40px; /* Adjust as needed */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar-brand:hover {
+  color: #e74c3c; /* Red color on hover */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  list-style: none;
+  margin-left: 20px; /* Adds space between each nav item */
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #ecf0f1;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #e74c3c;
+}
+
+.navbar-toggler {
+  border-color: #ecf0f1;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28236, 240, 241, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.3rem; /* Adjust brand size for smaller screens */
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+
+/* Hero */
+/* Hero.css */
+/* Hero.css */
+
+/* General Styling for the Hero Section */
+.hero-section {
+  background-color: #2c3e50; /* Dark blue background */
+  color: #ffffff; /* White text color */
+  padding: 100px 20px; /* Top and bottom padding */
+  text-align: center; /* Center align text */
+  background-size: cover; /* Ensure background covers the whole area */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Make the background image fixed */
+  position: relative;
+}
+
+/* Container Styling */
+.hero-container {
+  max-width: 900px; /* Limit the width of the content */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Hero Title Styling */
+.hero-title {
+  font-size: 4rem; /* Large font size for the title */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 20px; /* Space below the title */
+  color:white
+}
+
+/* Hero Subtitle Styling */
+.hero-subtitle {
+  font-size: 1.5rem; /* Larger font size for the subtitle */
+  margin-bottom: 30px; /* Space below the subtitle */
+}
+
+/* Hero Button Styling */
+.hero-button {
+  display: inline-block; /* Inline-block to allow padding and margin */
+  font-size: 1.2rem; /* Button text size */
+  padding: 15px 30px; /* Padding inside the button */
+  border-radius: 50px; /* Rounded corners for the button */
+  background-color: #007bff; /* Blue button background */
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline from the link */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.hero-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem; /* Slightly smaller font size for the title */
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem; /* Slightly smaller font size for the subtitle */
+  }
+
+  .hero-button {
+    font-size: 1rem; /* Adjust button text size */
+    padding: 12px 25px; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2.5rem; /* Further reduce font size for the title */
+  }
+
+  .hero-subtitle {
+    font-size: 1rem; /* Further reduce font size for the subtitle */
+  }
+
+  .hero-button {
+    font-size: 0.9rem; /* Smaller button text size */
+    padding: 10px 20px; /* Adjust button padding for small screens */
+  }
+}
+
+
+/* Features.css */
+#features {
+  background-color: #fff;
+}
+
+#features .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#features .col-md-4 {
+  flex: 0 0 30%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#features i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+#features h3 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+#features p {
+  color: #777;
+}
+
+/* 
+About  */
+
+/* About.css */
+
+/* General Styling for the About Section */
+#about {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 60px 20px; /* Padding around the section */
+}
+
+#about h2 {
+  color: #2c3e50; /* Dark blue color for the headings */
+  font-size: 2.5rem; /* Large font size for the main heading */
+  margin-bottom: 40px; /* Space below the main heading */
+  font-weight: bold;
+}
+
+#about p {
+  color: #7f8c8d; /* Gray color for the paragraph text */
+  font-size: 1.2rem; /* Slightly larger text for better readability */
+  line-height: 1.8; /* Increased line-height for better readability */
+  margin-bottom: 30px; /* Space below each paragraph */
+}
+
+#about .row {
+  display: flex;
+  flex-wrap: wrap; /* Allows the columns to wrap on smaller screens */
+  justify-content: space-between; /* Distribute the columns evenly */
+}
+
+#about .col-md-6 {
+  flex: 0 0 48%; /* Columns take up 48% width each with some space between */
+  margin-bottom: 30px; /* Space below each column */
+}
+
+#about h3 {
+  color: #34495e; /* Darker blue color for sub-headings */
+  font-size: 1.8rem; /* Font size for sub-headings */
+  margin-bottom: 20px; /* Space below each sub-heading */
+}
+
+#about .col-md-6 p {
+  font-size: 1.1rem; /* Adjusted font size for column paragraphs */
+  color: #7f8c8d; /* Matching paragraph text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #about .col-md-6 {
+    flex: 0 0 100%; /* Columns take up full width on smaller screens */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  #about h2 {
+    font-size: 2rem; /* Slightly smaller heading on smaller screens */
+  }
+
+  #about h3 {
+    font-size: 1.5rem; /* Adjust sub-heading size for smaller screens */
+  }
+
+  #about p {
+    font-size: 1rem; /* Adjust paragraph size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  #about {
+    padding: 40px 10px; /* Reduced padding for very small screens */
+  }
+
+  #about h2 {
+    font-size: 1.8rem; /* Further reduce heading size on very small screens */
+  }
+
+  #about h3 {
+    font-size: 1.3rem; /* Further reduce sub-heading size */
+  }
+
+  #about p {
+    font-size: 0.95rem; /* Further reduce paragraph size */
+  }
+}
+
+/* contact */
+
+/* General Styling for the Contact Section */
+#contact {
+  background-color: #f4f7f6; /* Softer light background */
+  padding: 70px 20px; /* Increase padding for more spacing */
+
+}
+
+#contact h2 {
+  color: #2c3e50; /* Dark blue color for the heading */
+  font-size: 2.5rem; /* Large font size for the main heading */
+  margin-bottom: 30px; /* Space below the main heading */
+  font-weight: bold;
+}
+
+#contact p {
+  color: #7f8c8d; /* Gray color for the paragraph text */
+  font-size: 1.2rem; /* Slightly larger text for better readability */
+  margin-bottom: 40px; /* Space below the description */
+}
+
+#contact .form-group {
+  margin-bottom: 25px; /* Increased space between form elements */
+}
+
+#contact .form-control {
+  height: 65px; /* Increased height for input fields */
+  border-radius: 50px; /* Full-rounded corners for a modern look */
+  border: 1px solid #ced4da; /* Light border color */
+  padding: 20px 25px; /* Increased padding inside the input */
+  font-size: 1.2rem; /* Increased font size for the input */
+  color: #495057; /* Dark text color */
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+#contact .form-control:focus {
+  border-color: #007bff; /* Border color on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+}
+
+#contact .form-control::placeholder {
+  color: #adb5bd; /* Placeholder text color */
+}
+
+#contact textarea.form-control {
+  height: auto; /* Auto-adjust height */
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 180px; /* Increased minimum height for the textarea */
+  padding: 20px 25px; /* Increased padding for textarea */
+}
+
+#contact button {
+  width: 100%;
+  max-width: 250px; /* Increased width limit of the button */
+  font-size: 1.3rem; /* Slightly increased font size for the button */
+  background-color: #007bff; /* Blue background for the button */
+  border: none;
+  padding: 18px; /* Increased padding */
+  border-radius: 50px; /* Full-rounded corners for the button */
+  color: #fff; /* White text color */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+  margin-top: 20px; /* Space above the button */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#contact button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #contact h2 {
+    font-size: 2rem; /* Slightly smaller heading on smaller screens */
+  }
+
+  #contact p {
+    font-size: 1.1rem; /* Slightly smaller paragraph text */
+  }
+
+  #contact .form-control {
+    height: 60px; /* Adjusted height for smaller screens */
+    padding: 18px 20px; /* Adjusted padding for smaller screens */
+    font-size: 1.1rem; /* Maintain consistent font size */
+  }
+
+  #contact textarea.form-control {
+    min-height: 160px; /* Adjusted height for smaller screens */
+    padding: 18px 20px; /* Adjusted padding for textarea */
+  }
+
+  #contact button {
+    font-size: 1.2rem; /* Slightly smaller button text */
+    max-width: 100%; /* Make button full-width on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  #contact {
+    padding: 40px 10px; /* Reduced padding for very small screens */
+  }
+
+  #contact h2 {
+    font-size: 1.8rem; /* Further reduce heading size on very small screens */
+  }
+
+  #contact p {
+    font-size: 1rem; /* Further reduce paragraph size */
+  }
+
+  #contact .form-control {
+    height: 55px; /* Further reduced height for input fields */
+    padding: 16px 18px; /* Reduced padding for smaller screens */
+    font-size: 1rem; /* Adjusted font size for input fields */
+  }
+
+  #contact textarea.form-control {
+    min-height: 150px; /* Adjusted textarea height */
+    padding: 16px 18px; /* Reduced padding for textarea */
+  }
+
+  #contact button {
+    font-size: 1.1rem; /* Smaller font size for the button */
+    max-width: 100%; /* Ensure button is full-width */
+  }
+}
+
+/* footer */
+/* Footer.css */
+.footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 40px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #ecf0f1;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #bdc3c7;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-section ul li a:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+.footer-section .social-links {
+  display: flex;
+}
+
+.footer-section .social-links a {
+  color: #bdc3c7;
+  margin-right: 15px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section .social-links a:hover {
+  color: #e74c3c;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+  border-top: 1px solid #34495e;
+  font-size: 1rem;
+  color: #bdc3c7;
+}
+
+
+/* Responsive Design */
+/* Responsive.css */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  #about .container {
+    flex-direction: column;
+  }
+
+  #features .container {
+    flex-direction: column;
+  }
+
+  #features .col-md-4 {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    margin: 20px auto;
+  }
+
+  .card-img-top {
+    height: auto;
+  }
+}
+/* Card.css */
+
+/* Card.css */
+
+/* Ensure the cards are aligned horizontally */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin: 20px; /* Add spacing between cards */
+  max-width: 300px; /* Set a fixed width for cards */
+}
+
+/* Container to align cards horizontally */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Card image styling */
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Card body styling */
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #777;
+}
+
+
+/* testimonials */
+/* Testimonials.css */
+
+/* General Styling for the Testimonials Section */
+.testimonials-section {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 70px 20px; /* Padding around the section */
+  text-align: center; /* Center align text */
+}
+
+.section-title {
+  color: #2c3e50; /* Dark blue color for the heading */
+  font-size: 2.5rem; /* Large font size for the section title */
+  margin-bottom: 50px; /* Space below the section title */
+  font-weight: bold;
+}
+
+/* Container for Testimonials */
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows the testimonials to wrap on smaller screens */
+  justify-content: space-around; /* Space out the testimonials */
+}
+
+/* Individual Testimonial Styling */
+.testimonial {
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the testimonial */
+  margin-bottom: 30px; /* Space below each testimonial */
+  max-width: 300px; /* Limit the width of each testimonial */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center text within each testimonial */
+}
+
+.testimonial-quote {
+  font-size: 1.1rem; /* Font size for the quote */
+  color: #7f8c8d; /* Gray color for the quote */
+  margin-bottom: 20px; /* Space below the quote */
+}
+
+.testimonial-name {
+  font-size: 1.2rem; /* Font size for the name */
+  color: #2c3e50; /* Dark blue color for the name */
+  margin-bottom: 5px; /* Space below the name */
+}
+
+.testimonial-position {
+  font-size: 1rem; /* Font size for the position */
+  color: #95a5a6; /* Lighter gray color for the position */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonials-container {
+    flex-direction: column; /* Stack testimonials vertically on smaller screens */
+    align-items: center; /* Center align the testimonials */
+  }
+
+  .testimonial {
+    max-width: 100%; /* Ensure testimonials take up full width on small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 2rem; /* Reduce font size for the section title on very small screens */
+  }
+
+  .testimonial-quote {
+    font-size: 1rem; /* Adjust quote size for better readability on small screens */
+  }
+}

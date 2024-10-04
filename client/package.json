@@ -1,0 +1,38 @@
+{
+  "name": "client",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Faijan Khan",
+  "type": "module",
+  "scripts": {
+    "dev": "vite ",
+    "build": "vite build",
+    "preview": "vite preview --host=0.0.0.0 --port=8080",
+    "host": "vite --host --port=8080"
+  },
+  "dependencies": {
+    "@react-oauth/google": "^0.9.0",
+    "@reduxjs/toolkit": "^1.9.3",
+    "axios": "^1.3.4",
+    "minimatch": "^9.0.1",
+    "react": "^18.2.0",
+    "react-blurhash": "^0.3.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-markdown": "^8.0.7",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.9.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "react-toastify": "^10.0.5",
+    "remark-gfm": "^4.0.0",
+    "sass": "^1.59.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.2.0",
+    "vite-plugin-pwa": "^0.14.7"
+  }
+}
